@@ -1,5 +1,5 @@
 import { defaultPageMeta, mapMetaTags } from './meta-factory';
-import { RouterMeta } from './interfaces';
+import { MetaTagDefinition, RouterMeta } from './interfaces';
 import { NavigationGuard } from 'vue-router';
 
 export function metaGuard(defaultMeta: RouterMeta = defaultPageMeta): NavigationGuard {
@@ -24,7 +24,7 @@ export function metaGuard(defaultMeta: RouterMeta = defaultPageMeta): Navigation
     document.title = routerMeta.title || defaultMeta.title;
 
     // create elements with the meta tags
-    const tags = mapMetaTags(routerMeta.metaTags);
+    const tags = mapMetaTags(routerMeta.metaTags as MetaTagDefinition[]);
 
     // Add the tags
     for (const tag of tags) {

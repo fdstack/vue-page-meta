@@ -14,14 +14,7 @@ export function pageMetaFactory(args: MetaFactoryOptions = {}): RouterMeta {
 
   return {
     title: options.title,
-    metaTags: [
-      metaTagFactory('og:title', options.title),
-      metaTagFactory('og:description', options.description),
-      metaTagFactory('og:image', options.img),
-      metaTagFactory('keywords', options.keywords),
-      metaTagFactory('description', options.description),
-      ...options.metaTags,
-    ],
+    metaTags: options.metaTags,
   };
 }
 

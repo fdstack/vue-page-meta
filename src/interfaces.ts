@@ -8,7 +8,7 @@ export interface VuePageMetaOptions {
 
 export interface RouterMeta {
   title: string;
-  metaTags: MetaTagDefinition[];
+  metaTags?: MetaTagDefinition[];
 }
 
 export interface MetaTagDefinition {
