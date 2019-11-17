@@ -4,7 +4,7 @@
   "repository": "https://github.com/fdstack/vue-page-meta.git",
   "scripts": {
     "build": "tsc --emitDeclarationOnly && rollup -c",
-    "publish": "cd dist/lib && npm publish --access public"
+    "publish": "cd dist && npm publish --access public"
   },
   "dependencies": {
     "vue": "^2.6.10",
