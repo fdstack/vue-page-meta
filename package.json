@@ -1,6 +1,6 @@
 {
   "name": "vue-page-meta",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "repository": "https://github.com/fdstack/vue-page-meta.git",
   "scripts": {
     "build": "tsc --emitDeclarationOnly && rollup -c",
